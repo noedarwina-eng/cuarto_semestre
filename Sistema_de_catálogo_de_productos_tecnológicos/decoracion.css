@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #eeeeee;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 30px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu a:hover {
+    color: blue;
+}
+
+.banner img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.banner-texto {
+    text-align: center;
+    padding: 20px;
+}
+
+.banner-texto h2 {
+    margin-bottom: 10px;
+}
+
+.banner-texto p {
+    margin-bottom: 10px;
+}
+
+.boton {
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+}
+
+.catalogo {
+    padding: 20px;
+}
+
+.catalogo h2,
+.beneficios h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+}
+
+.tarjeta:hover {
+    background-color: #eeeeee;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+
+.precio {
+    font-weight: bold;
+}
+
+.boton-consultar {
+    text-align: center;
+    background-color: blue;
+    color: white;
+    padding: 5px;
+}
+
+.beneficios {
+    padding: 20px;
+    background-color: #eeeeee;
+}
+
+.beneficios-lista {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.beneficio {
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+}
+
+.footer {
+    background-color: #eeeeee;
+    padding: 20px;
+}
+
+.footer-contenido {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .productos,
+    .beneficios-lista {
+        grid-template-columns: 1fr;
+    }
+}
