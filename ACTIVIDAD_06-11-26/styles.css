@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px;
+    background-color: #f1f5f9;
+}
+
+.servicios {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    max-width: 900px;
+    margin: 0 auto 40px;
+}
+
+.tarjeta {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px #00000020;
+}
+
+.tarjeta h3 {
+    font-size: 16px;
+    color: #0f172a;
+}
+
+.tarjeta p {
+    font-size: 13px;
+    color: #475569;
+}
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.galeria img {
+    flex: 0 0 calc((100% - 12px) / 3);
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.galeria img[src*="juli-aniversario"] {
+    object-position: left center;
+}

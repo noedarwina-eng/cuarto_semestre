@@ -1,31 +1,24 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f1f5f9;
-    margin: 0;
-    padding: 30px;
+ontenedor-ejemplo {
+    margin-bottom: 30px;
 }
 
-h1 {
-    text-align: center;
-    color: #1e293b;
+/* Ejemplo 1: sin Flexbox */
+.contenedor-normal {
+    border: 2px dashed #999;
+    padding: 10px;
 }
 
-h2 {
-    color: #334155;
-    font-size: 20px;
-}
-
-.contenedor-ejemplo {
-    background-color: white;
-    padding: 20px;
-    margin: 25px auto;
-    max-width: 850px;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px #00000015;
+/* Ejemplo 2: con Flexbox */
+.contenedor-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px dashed #999;
+    padding: 10px;
 }
 
 /* Estilos de las cajas */
-.caja {
+.caja1 {
     width: 150px;
     height: 50px;
     background-color: #2563eb;
@@ -37,22 +30,90 @@ h2 {
     align-items: center;
     border-radius: 8px;
     margin: 5px;
+
+    flex-grow: 1;        
+    flex-shrink: 1;      
+    flex-basis: 200px;   
+    order: 3;            
 }
 
-/* EJEMPLO 1: SIN FLEXBOX */
-.contenedor-normal {
-    background-color: #e2e8f0;
-    height: 200px;
-    padding: 15px;
-    border: 2px dashed #64748b;
-}
-
-/* EJEMPLO 2: CON FLEXBOX */
-.contenedor-flex {
+.caja2 {
+    width: 150px;
+    height: 50px;
+    background-color: #16a34a;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
     display: flex;
-    justify-content: space-between;
-    background-color: #dbeafe;
-    height: 200px;
-    padding: 15px;
-    border: 2px dashed #2563eb;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin: 5px;
+
+    flex-grow: 2;        
+    flex-shrink: 0;     
+    flex-basis: 300px;
+    order: 1;            
+}
+
+.caja3 {
+    width: 150px;
+    height: 50px;
+    background-color: #dc2626;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin: 5px;
+
+    flex-grow: 1;
+    order: 2;            
+}
+
+.caja4 {
+    width: 150px;
+    height: 50px;
+    background-color: #f59e0b;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin: 5px;
+    order: 4;
+}
+
+.caja5 {
+    width: 150px;
+    height: 50px;
+    background-color: #9333ea;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin: 5px;
+    order: 5;
+}
+
+.caja6 {
+    width: 150px;
+    height: 50px;
+    background-color: #0891b2;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin: 5px;
+    order: 6;
 }
