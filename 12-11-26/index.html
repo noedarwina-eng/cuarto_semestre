@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menú lateral</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+
+            <div class="menu">
+                <li><a href="#" class="activo">🏠Inicio</a></li>
+                <li><a href="#">👥Usuarios</a></li>
+                <li><a href="#"> 💻Equipos</a></li>
+                <li><a href="#"> 📋Reportes</a></li>
+                <li><a href="#"> 🛠️Mantenimiento</a></li>
+                <li><a href="#">⚙️Configuración</a></li>
+            </div>
+        </aside>
+       <main class="contenido">
+    <h1>Panel de control</h1>
+
+    <section class="tarjetas">
+        <div class="tarjeta">
+            <h2>💻</h2>
+            <h3>Total de equipos</h3>
+            <p class="numero">120</p>
+            <h4>equipos registrados</h4>
+        </div>
+        <div class="tarjeta">
+            <h2>✔️</h2>
+            <h3>Equipos operativos</h3>
+            <p class="numero">95</p>
+            <h4>en funcionamiento</h4>
+        </div>
+        <div class="tarjeta">
+            <h2>🔧</h2  >
+            <h3>En mantenimiento</h3>
+            <p class="numero">15</p>
+            <h4>requieren reparación</h4>
+        </div>
+        <div class="tarjeta">
+            <h2>⚠️</h2>
+            <h3>Incidencias pendientes</h3>
+            <p class="numero">10</p>
+            <h4>por resolver</h4>
+        </div>
+    </section>
+    <section class="tabla-contenedor">
+    <table class="tabla">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Equipo</th>
+                <th>Área</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>EQ-001</td>
+                <td>Computadora Dell</td>
+                <td>Administración</td>
+                <td><span class="estado operativo">Operativo</span></td>
+            </tr>
+            <tr>
+                <td>EQ-002</td>
+                <td>Laptop HP</td>
+                <td>Contabilidad</td>
+                <td><span class="estado mantenimiento">Mantenimiento</span></td>
+            </tr>
+            <tr>
+                <td>EQ-003</td>
+                <td>Computadora Lenovo</td>
+                <td>Informática</td>
+                <td><span class="estado operativo">Operativo</span></td>
+            </tr>
+            <tr>
+                <td>EQ-004</td>
+                <td>Impresora Epson</td>
+                <td>Secretaría</td>
+                <td><span class="estado pendiente">Pendiente</span></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+</main>
+    </div>
+</body>
+</html>

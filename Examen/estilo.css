@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    background: #b7bec8;
+
+}
+.menu{
+    width: 200;
+    background: #0044ff;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+.menu h2 {
+    margin-bottom: 20px;
+}
+
+.menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+}
+
+.principal{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.arriba{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 20px;
+}
+
+.usuario{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #e100ff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contenido{
+    flex: 1;
+    padding: 20px;
+
+}
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.tarjeta {
+  flex: 1;
+  min-width: 150px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  border-bottom: 4px solid #3b82f6;
+}
+
+.tarjeta h1 {
+  margin: 10px 0;
+}
+
+.verde {
+  border-bottom-color: green;
+}
+
+.naranja {
+  border-bottom-color: orange;
+}
+
+.rojo {
+  border-bottom-color: red;
+}
+
+.morado {
+  
+  border-bottom-color: rgb(149, 0, 255);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  margin-top: 10px;
+}
+
+th {
+  background: #1e3a8a;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.pie {
+  text-align: center;
+  padding: 15px;
+  font-size: 13px;
+  color: gray;
+}
